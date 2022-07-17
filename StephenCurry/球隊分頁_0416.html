@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../assets/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../_css/bootstrap.min.css">
+    <link rel="stylesheet" href="../_css/footer.css">
+    <link rel="stylesheet" href="../_css/球隊.css">
+    <script src="../_js/jquery.min.js"></script>
+    <script src="../_js/popper.min.js"></script>
+    <script src="../_js/bootstrap.min.js"></script>
+    <title>期中小專 Stephen Curry 球員介紹</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom"
+        style="position:absolute; width: 100%;box-shadow:3px 3px 12px  rgb(24, 24, 91); ">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample08"
+            aria-controls="navbarsExample08" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div>
+            <a href="https://nba.udn.com/nba/index?gr=www">
+                <img src="../_image/NBA-logo.png" alt="" style="width: auto; height:60px;">
+            </a>
+        </div>
+        <div class="collapse navbar-collapse justify-content-md-center" id="navbarsExample08">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="首頁_0413.html">
+                        <b> 球員介紹 </b><span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="球隊分頁_0416.html"><b>
+                            金洲勇士 </b></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="代言分頁_0413.html"><b>
+                            品牌代言 </b></a>
+                </li>
+            </ul>
+        </div>
+
+    </nav>
+
+    <div class="gym" style="background-image: url(../_image/20180615144919_60.jpg);">
+        <div class="gym-champions">
+            <img src="../_image/bigmanok.png" alt="">
+        </div>
+    </div>
+
+    <div class="spaceaa" style="width: 100%;height: 740px;"></div>
+
+    <div class="warriors">
+        <div style="width: 25%;margin: 0 0 0 30px;">
+            <a href="https://www.nba.com/warriors/" target="_blank">
+                <img src="../_image/Golden_State_Warriors_logo.png" alt=""style="float:left ;width: 50%; ">
+            </a>
+         
+        </div>
+        <div style="width: 70%; margin: 0 auto;">
+            <h1 style="text-align: center;"><b>金洲勇士</b></h1>
+            <p><b><em>
+                        金州勇士（英語：Golden State Warriors，簡稱：GSW），是一支位於美國加利福尼亞州舊金山的職業籃球隊
+                        ，分屬於NBA聯盟西區聯盟的太平洋組，主場球館為大通銀行中心。球隊的格言為「全隊即為一城」
+                        （The whole team is a city）。勇士隊是現今北美職業體育聯賽裡，少有的名稱不包含主場所在城市的隊伍
+                        ，這是因為1971年球團想以北加州的奧克蘭以及南加州的聖地牙哥為雙主場，而以加州的暱名「金州」
+                        （Golden State）為名來代表為全加州的球隊。勇士隊前身為費城勇士（PhiladelphiaWarriors），
+                        成立於1946年，是聯盟的創始球隊之一，曾於1947年贏得聯盟第一個賽季的總冠軍。1962年，
+                        球隊遷至舊金山灣區，更名為舊金山勇士（San Francisco Warriors）；1971年，球隊改名為如今的金州勇士。
+                        1972年，球隊遷至和舊金山只有一橋之隔的奧克蘭體育館。球隊在2019–20賽季遷回舊金山，
+                        新球場是大通銀行中心（Chase Center）。球隊一共獲得過6次聯盟總冠軍。2015-16賽季金州勇士取得73勝9負
+                        ，成為NBA史上單季例行賽最佳戰績的隊伍，打破了1995-96賽季芝加哥公牛72勝10負的記錄，
+                        但冠軍賽對上克里夫蘭騎士，原本勇士以3-1領先，但最終以3-4被騎士逆轉，成為NBA歷史上第一支冠軍賽
+                        3:1領先情況下被逆轉的球隊。2016-2017年賽季勇士補進的前得分王凱文·杜蘭特在季後賽發揮了預期實力，
+                        有效的填補得分和防守空缺，率球隊在季後賽取得16勝1負的佳績創下歷史紀錄。2017-18賽季總決賽以4-0
+                        橫掃克里夫蘭騎士奪得NBA總冠軍達成二連霸。
+            </p></b></em>
+        </div>
+    </div>
+    <div class="messenger">
+        <div class="messengerone">
+            <label for="inputbox" style="color: rgb(76, 71, 139);"><b>留下短言:</b></label>
+            <br>
+            <textarea name="inputbox" id="inputbox"></textarea>
+            <br>
+            <button id="inputbt" style="background-color: rgb(200, 196, 203);">留言</button>
+        </div>
+        <div class="messengerone">
+            <ul id="inputul" style="position: absolute"></ul>
+        </div>
+    </div>
+
+    <script>
+        var btn = document.querySelector('#inputbt')
+        var textarea = document.querySelector('#inputbox')
+        var x = document.querySelector('#inputul')
+        btn.onclick = function () {
+
+            if (textarea.value == '') {
+                alert('請輸入內容')
+                return false
+            } else {
+                var y = document.createElement('li')
+                y.innerHTML = textarea.value + "<a id='aa'; href='javascript:;'>刪除</a>"
+                x.insertBefore(y, x.children[0])
+                var as = document.querySelectorAll('#aa')
+
+                for (var i = 0; i < as.length; i++) {
+                    as[i].onclick = function () {
+                        x.removeChild(this.parentNode)
+                    }
+                }
+            }
+        }
+
+    </script>
+
+
+    <div class="footerdiv" style="box-shadow:3px 3px 12px  rgb(24, 24, 91);">
+        <i class="fontawesome-eye-open fa-2x"></i>
+        <ul>
+            <li><a href="#">Twitter</a></li>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Email</a></li>
+        </ul>
+    </div>
+
+
+</body>
+
+</html>

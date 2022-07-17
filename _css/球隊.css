@@ -1,0 +1,148 @@
+
+body {
+    background: -webkit-linear-gradient(to top, rgb(255, 243, 227), rgb(76, 71, 139));
+    background: linear-gradient(to top, rgb(255, 243, 227), rgb(76, 71, 139));
+}
+
+.navbar-custom {
+    background-color: rgb(30, 29, 85);
+    /* background-color: rgb(71, 93, 139); */
+}
+
+.gym {
+    width: 100%;
+    height: 70%;
+    margin-top: 100px;
+    position: relative;
+    background-position: center;
+    background-size: cover;
+    position: absolute;
+    background-image: url();
+}
+
+.gym-champions {
+    backdrop-filter: blur(5px);
+
+}
+
+.gym-champions img {
+    display: block;
+    width: 70%;
+    height: 60%;
+    margin: -10px auto;
+}
+
+.warriors {
+    margin: 80px auto;
+    width: 100%;
+    height: 300px;
+    
+}
+
+.warriors h1,
+p {
+    color: rgb(28, 51, 94);
+}
+
+.warriors img:hover{
+   
+    transform:scale(1.1);
+}
+
+
+@media (max-width:1300px) {
+    .gym-champions img {
+        display: none;
+    }
+}
+
+@media (max-width:800px) {
+    .warriors img {
+        width: 40%;
+    }
+}
+
+@media (max-width:1350px) {
+    .warriors {
+        height: 500px;
+    }
+}
+
+@media (max-width:870px) {
+    .warriors {
+        height: 650px;
+    }
+}
+
+@media (max-width:600px) {
+    .warriors {
+        height: 850px;
+    }
+}
+
+.messenger {
+    width: 100%;
+    height: 300px;
+    
+
+}
+
+.messengerone{
+    width: 50%;
+    margin: 0 auto;
+}
+
+#inputbox {
+    background-color: rgba(46, 44, 148, 0.171);
+}
+
+textarea {
+    width: 500px;
+    height: 100px;
+    border: 2px solid rgb(30, 29, 85);
+    outline: none;
+    resize: none;
+}
+
+
+#inputbt {
+    background-color: antiquewhite;
+}
+
+.messenger li {
+
+    list-style: none;
+    width: 300px;
+    padding: 4px;
+    background-color: rgba(255, 220, 106, 0.829);
+    color: rgb(24, 24, 91);
+    font-size: 14px;
+    margin: 10px 0;
+
+}
+
+.messenger li a {
+    float: right;
+    text-decoration: none;
+    color: rgb(46, 44, 148);
+}
+
+
+@media (max-width:700px) {
+    .messengerone {
+        width: 90%;
+    }
+}
+
+@media (max-width:560px) {
+    #inputbox {
+       width: 300px;
+    }
+}
+
+@media (min-width:1200px) {
+    #inputbox {
+       width: 700px;
+    }
+}
+

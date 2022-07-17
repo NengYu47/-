@@ -1,0 +1,28 @@
+.footerdiv {
+    width: 100%;
+    height: 250px;
+    background-color: rgb(71, 93, 139);
+    display: flex;
+    /* background-color: #002a38; */
+    line-height: 1.3;
+    font-family: Menlo, monospace;
+}
+
+.footerdiv ul {
+    display: inline-grid;
+    grid-auto-flow: column;
+    grid-gap: 24px;
+    justify-items: center;
+    margin: auto;
+    list-style-type: circle;
+}
+
+.footerdiv a {
+    color: rgb(237, 215, 215);
+    text-decoration: none;
+    box-shadow: inset 0 -1px 0 hsla(0, 0%, 100%, 0.4);
+}
+
+.footerdiv a:hover {
+    box-shadow: inset 0 -1.2em 0 hsla(0, 0%, 100%, 0.4);
+}

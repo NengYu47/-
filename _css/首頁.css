@@ -1,0 +1,219 @@
+.carousel-inner img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+body {
+    /* background-color: antiquewhite; */
+    /* background: -webkit-linear-gradient(to top,antiquewhite, #fdbb2d);
+    background: linear-gradient(to top, antiquewhite, #fdbb2d); */
+    background: -webkit-linear-gradient(to left, #fdbb2d, antiquewhite);
+    background: linear-gradient(to left, #fdbb2d, antiquewhite);
+}
+
+.navbar-custom {
+    background-color: rgb(71, 93, 139);
+}
+
+.bdone {
+
+    width: 80%;
+    height: 814px;
+    margin: 0 auto;
+
+}
+
+#bdoneone{
+    transition: 1s all;
+    width: 100%;
+    height: 180px;
+    margin: 0 auto;
+    
+}
+
+#bdoneone:hover {
+    
+    background-color: rgba(71, 10, 251, 0.311);
+    backdrop-filter: invert(80%);
+}
+
+.bdonetwo {
+    margin: 0 auto;
+}
+
+.bdone img {
+    height: 50%;
+    width: 100%;
+    margin: 0 auto;
+    box-shadow: 3px 3px 12px rgb(104, 105, 99);
+}
+
+.bdone p {
+    margin: 0 auto;
+    font-size: 6em;
+}
+
+.bdtwo {
+    height: 770px;
+    background-color: rgb(71, 93, 139);
+    box-shadow: 3px 3px 12px rgb(24, 24, 91);
+}
+
+.bdtwoone {
+    width: 80%;
+    margin: 0px auto;
+}
+
+.bdtwoone h1 {
+    color: rgb(255, 255, 255);
+}
+
+.bdtwoone p {
+    color: rgb(255, 255, 255);
+}
+
+.playertable th,
+td {
+    color: rgb(28, 51, 94);
+    font-size: 18px;
+}
+
+.hide-on-mobile {
+    box-shadow: 3px 3px 12px rgb(24, 24, 91);
+}
+
+.playertable {
+    width: 100%;
+}
+
+.partthree {
+    height: 900px;
+    margin: 0 auto;
+}
+
+.partthree h1,
+p {
+    color: rgb(28, 51, 94);
+}
+
+.score h1,
+ul {
+    color: rgb(28, 51, 94);
+}
+
+.score {
+    width: 80%;
+    height: 800px;
+    margin: -15px auto
+}
+
+.SCicon {
+    width: 80px;
+    height: 80px;
+    position: fixed;
+    right: 20px;
+    top: 500px;
+    box-shadow: 2px 2px 6px rgb(70, 70, 69);
+    border: 1px rgb(94, 93, 88) double;
+    border-radius: 5px;
+    background-color: rgb(52, 121, 194);
+}
+
+.SCicon:hover::before {
+    position: absolute;
+    top: 90px;
+    right: 0px;
+    color: #fff;
+    font-size: .5em;
+    background: #000000;
+    padding: 5px;
+    border-radius: 5px;
+    content: '點我! 維基百科';
+}
+
+@media (max-width: 1020px) {
+    .SCicon {
+        display: none;
+    }
+}
+
+@media (max-width: 754px) {
+    .bdoneone {
+        height: 360px;
+    }
+}
+
+@media (max-width: 1000px) {
+    .ytvideo {
+        width: 462px;
+        height: 378px;
+    }
+}
+
+@media (max-width: 490px) {
+    .ytvideo {
+        width: 462px;
+        height: 378px;
+    }
+}
+
+@media (min-width: 1533px) {
+    .bdone {
+        margin-bottom: 163px;
+    }
+}
+
+@media (max-width: 1020px) {
+    .bdone {
+        height: 700px;
+    }
+}
+
+@media (max-width: 500px) {
+    .bdone {
+        height: 600px;
+    }
+}
+
+@media (max-width: 510px) {
+    .bdtwo {
+        height: 1000px;
+    }
+}
+
+@media screen and (max-width: 770px) {
+    .hide-on-mobile {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 1260px) {
+    .curry {
+        display: none;
+    }
+}
+
+@media (max-width: 560px) {
+    .partthree {
+        height: 1000px;
+    }
+}
+
+@media (max-width: 560px) {
+    .score {
+        height: 1000px;
+    }
+}
+
+@media (max-width: 420px) {
+    .partthree {
+        height: 1100px;
+    }
+}
+
+@media (max-width: 420px) {
+    .score {
+        height: 1100px;
+    }
+}
